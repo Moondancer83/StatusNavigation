@@ -1,7 +1,7 @@
 'use strict';
 
 (function(angular) {
-    var app = angular.module('App', []);
+    var app = angular.module('App', ['StatusNavigation']);
 
     app.controller('TestCtrl', [function() {
         var that = this;
