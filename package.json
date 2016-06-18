@@ -1,0 +1,27 @@
+{
+  "name": "status-navigation",
+  "version": "1.0.0",
+  "description": "Status navigation component for AngularJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moondancer83/StatusNavigation.git"
+  },
+  "keywords": [
+    "angular",
+    "navigation",
+    "component"
+  ],
+  "author": "Moondancer83",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Moondancer83/StatusNavigation/issues"
+  },
+  "homepage": "https://github.com/Moondancer83/StatusNavigation#readme",
+  "devDependencies": {
+    "angular": "^1.5.7"
+  }
+}
