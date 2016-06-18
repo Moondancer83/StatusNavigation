@@ -1,0 +1,25 @@
+.status-navigation {
+    display: table;
+}
+.status-navigation .navigation-icon-bar, .status-navigation .navigation-text-bar {
+    display: table-cell;
+    border: 1px dotted olive;
+}
+.status-navigation ul {
+    margin: 0;
+    padding: 0;
+}
+.status-navigation li {
+    list-style-type: none;
+}
+.status-navigation .done {
+    color: green;
+}
+.status-navigation .active {
+    background-color: olive;
+    color: yellow;
+}
+.status-navigation .disabled {
+    background-color: #EEEEEE;
+    color: #999999;
+}
