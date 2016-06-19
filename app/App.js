@@ -3,7 +3,7 @@
 (function(angular) {
     var app = angular.module('App', ['StatusNavigation']);
 
-    app.controller('TestCtrl', [function() {
+    app.controller('TestCtrl', ['$scope', function($scope) {
         var that = this;
 
         that.navigation = {
@@ -18,11 +18,10 @@
         };
 
         that.forward = function() {
-            that.navigation.active++;
-            console.log(that.navigation.active);
+            $scope.$broadcast("navigation-forward");
         };
         that.backward = function() {
-            that.navigation.active--;
+            $scope.$broadcast("navigation-backward");
         };
     }])
 })(angular);

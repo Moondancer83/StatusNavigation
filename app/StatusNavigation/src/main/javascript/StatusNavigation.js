@@ -26,6 +26,16 @@
                 }
                 return result;
             };
+            var forward = function() {
+                if(config.active < config.elements.length && config.disabled.indexOf(config.active + 1) === -1) {
+                    config.active++;
+                }
+            };
+            var backward = function() {
+                if(config.active > 1 && config.disabled.indexOf(config.active - 1) === -1) {
+                    config.active--;
+                }
+            };
 
             return {
                 restrict: 'AE',
@@ -39,6 +49,12 @@
                 link: function (scope) {
                     config = scope.config;
                     scope.getClass = getClass;
+                    scope.$on("navigation-forward", function () {
+                        forward();
+                    });
+                    scope.$on("navigation-backward", function () {
+                        backward();
+                    });
                 }
             };
         }]);
