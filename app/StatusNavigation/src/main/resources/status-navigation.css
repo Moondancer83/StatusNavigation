@@ -1,0 +1,67 @@
+.mnd-status-navigation {
+    display: table;
+}
+
+.mnd-status-navigation .mnd-navigation-icon-bar, .mnd-status-navigation .mnd-navigation-text-bar {
+    display: table-cell;
+}
+
+.mnd-status-navigation ul {
+    margin: 0;
+    padding: 0;
+}
+
+.mnd-status-navigation li {
+    list-style-type: none;
+}
+
+.mnd-status-navigation .mnd-element-done {
+    color: green;
+}
+
+.mnd-status-navigation .mnd-element-active {
+    background-color: black;
+    color: white;
+}
+
+.mnd-status-navigation .mnd-element-disabled {
+    background-color: #EEEEEE;
+    color: #999999;
+}
+
+.mnd-status-navigation .mnd-navigation-icon-bar li, .mnd-status-navigation .mnd-navigation-text-bar li {
+    height: 1em;
+    line-height: 1em;
+    padding: 0 5px;
+}
+.mnd-status-navigation .mnd-navigation-icon-bar li {
+    width: 1em;
+}
+.mnd-status-navigation .mnd-navigation-text-bar li {
+    padding: 0 10px;
+}
+
+.mnd-status-navigation .mnd-navigation-icon-bar li .mnd-number-icon {
+    border-radius: 1em;
+    text-align: center;
+}
+
+.mnd-status-navigation .mnd-number-icon {
+    background-color: black;
+    color: white;
+}
+
+.mnd-status-navigation .mnd-element-active .mnd-number-icon {
+    background-color: white;
+    color: black;
+}
+
+.mnd-status-navigation .mnd-element-done .mnd-number-icon {
+    background-color: green;
+    color: white;
+}
+
+.mnd-status-navigation .mnd-element-disabled .mnd-number-icon {
+    background-color: darkgray;
+    color: white;
+}
