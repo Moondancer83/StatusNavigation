@@ -1,25 +1,68 @@
 .status-navigation {
     display: table;
 }
+
 .status-navigation .navigation-icon-bar, .status-navigation .navigation-text-bar {
     display: table-cell;
-    border: 1px dotted olive;
 }
+
 .status-navigation ul {
     margin: 0;
     padding: 0;
 }
+
 .status-navigation li {
     list-style-type: none;
 }
+
 .status-navigation .done {
     color: green;
 }
+
 .status-navigation .active {
-    background-color: olive;
-    color: yellow;
+    background-color: black;
+    color: white;
 }
+
 .status-navigation .disabled {
     background-color: #EEEEEE;
     color: #999999;
 }
+
+.status-navigation .navigation-icon-bar li, .status-navigation .navigation-text-bar li {
+    height: 1em;
+    line-height: 1em;
+    padding: 0 5px;
+}
+.status-navigation .navigation-icon-bar li {
+    width: 1em;
+}
+.status-navigation .navigation-text-bar li {
+    padding: 0 10px;
+}
+
+.status-navigation .navigation-icon-bar li .icon {
+    border-radius: 1em;
+    text-align: center;
+}
+
+.status-navigation .icon {
+    background-color: black;
+    color: white;
+}
+
+.status-navigation .active .icon {
+    background-color: white;
+    color: black;
+}
+
+.status-navigation .done .icon {
+    background-color: green;
+    color: white;
+}
+
+.status-navigation .disabled .icon {
+    background-color: darkgray;
+    color: white;
+}
+
