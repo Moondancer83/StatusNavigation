@@ -17,19 +17,12 @@
             disabled: [4]
         };
 
-        that.getClass = function(real_index) {
-            console.info(real_index);
-            var index = real_index + 1,
-                result = '';
-            if (index === that.navigation.active) {
-                result = 'active';
-            } else if (index < that.navigation.active) {
-                result = 'done';
-            } else if(that.navigation.disabled.indexOf(index) !== -1) {
-                result = 'disabled';
-            }
-            console.log(result);
-            return result;
-        }
+        that.forward = function() {
+            that.navigation.active++;
+            console.log(that.navigation.active);
+        };
+        that.backward = function() {
+            that.navigation.active--;
+        };
     }])
 })(angular);
