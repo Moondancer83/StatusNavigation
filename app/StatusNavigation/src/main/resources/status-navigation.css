@@ -1,67 +1,67 @@
-.status-navigation {
+.mnd-status-navigation {
     display: table;
 }
 
-.status-navigation .navigation-icon-bar, .status-navigation .navigation-text-bar {
+.mnd-status-navigation .mnd-navigation-icon-bar, .mnd-status-navigation .mnd-navigation-text-bar {
     display: table-cell;
 }
 
-.status-navigation ul {
+.mnd-status-navigation ul {
     margin: 0;
     padding: 0;
 }
 
-.status-navigation li {
+.mnd-status-navigation li {
     list-style-type: none;
 }
 
-.status-navigation .done {
+.mnd-status-navigation .mnd-element-done {
     color: green;
 }
 
-.status-navigation .active {
+.mnd-status-navigation .mnd-element-active {
     background-color: black;
     color: white;
 }
 
-.status-navigation .disabled {
+.mnd-status-navigation .mnd-element-disabled {
     background-color: #EEEEEE;
     color: #999999;
 }
 
-.status-navigation .navigation-icon-bar li, .status-navigation .navigation-text-bar li {
+.mnd-status-navigation .mnd-navigation-icon-bar li, .mnd-status-navigation .mnd-navigation-text-bar li {
     height: 1em;
     line-height: 1em;
     padding: 0 5px;
 }
-.status-navigation .navigation-icon-bar li {
+.mnd-status-navigation .mnd-navigation-icon-bar li {
     width: 1em;
 }
-.status-navigation .navigation-text-bar li {
+.mnd-status-navigation .mnd-navigation-text-bar li {
     padding: 0 10px;
 }
 
-.status-navigation .navigation-icon-bar li .icon {
+.mnd-status-navigation .mnd-navigation-icon-bar li .mnd-number-icon {
     border-radius: 1em;
     text-align: center;
 }
 
-.status-navigation .icon {
+.mnd-status-navigation .mnd-number-icon {
     background-color: black;
     color: white;
 }
 
-.status-navigation .active .icon {
+.mnd-status-navigation .mnd-element-active .mnd-number-icon {
     background-color: white;
     color: black;
 }
 
-.status-navigation .done .icon {
+.mnd-status-navigation .mnd-element-done .mnd-number-icon {
     background-color: green;
     color: white;
 }
 
-.status-navigation .disabled .icon {
+.mnd-status-navigation .mnd-element-disabled .mnd-number-icon {
     background-color: darkgray;
     color: white;
 }
