@@ -6,29 +6,19 @@
     <link rel="stylesheet" href="StatusNavigation/src/main/resources/status-navigation.css">
 </head>
 <body ng-app="App" ng-controller="TestCtrl as ctrl">
-
-<div class="status-navigation">
-    <div class="navigation-icon-bar">
-        <ul>
-            <li ng-repeat="element in ctrl.navigation.elements" ng-class="ctrl.getClass($index)">{{element.icon}}</li>
-        </ul>
-    </div>
-    <div class="navigation-text-bar">
-        <ul>
-            <li ng-repeat="element in ctrl.navigation.elements" ng-class="ctrl.getClass($index)">{{element.text}}</li>
-        </ul>
-    </div>
-</div>
-
-<br/><br/>
-<button>Forward</button>
-<button>Backward</button>
+<!-- Injecting component -->
+<div data-mn-status-navigation data-config="ctrl.navigation"></div>
+<!-- Injecting component -->
+<br/>
+<!-- controlling status -->
+<button ng-click="ctrl.forward()">Forward</button>
+<button ng-click="ctrl.backward()">Backward</button>
+<!-- controlling status -->
 
 <!-- Scripts -->
 <script src="../node_modules/angular/angular.min.js"></script>
 <script src="App.js"></script>
 
 <script src="StatusNavigation/src/main/javascript/StatusNavigation.js"></script>
-<script src="StatusNavigation/src/main/javascript/StatusNavigationDirective.js"></script>
 </body>
 </html>
