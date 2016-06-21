@@ -11,7 +11,7 @@
  *  - disabled
  */
 (function (angular) {
-    angular.module('StatusNavigation', [])
+    angular.module('StatusNavigation', ['ngAnimate'])
         .directive('mndStatusNavigation', [function () {
             var config;
             var cssClasses = {
@@ -49,9 +49,12 @@
                     config: '='
                 },
                 template: '<div class="mnd-status-navigation">' +
-                '<div class="mnd-navigation-icon-bar"><ul><li ng-repeat="element in config.elements" ng-class="getClass($index)"><div class="mnd-number-icon">{{element.icon}}</div></li></ul></div>' +
-                '<div class="mnd-navigation-text-bar"><ul><li ng-repeat="element in config.elements" ng-class="getClass($index)">{{element.text}}</li></ul></div>' +
-                '</div>',
+                    '<div class="mnd-navigation-control"><span data-ng-class="small(isHidden)" data-ng-click="isHidden = !isHidden"></span></div>' +
+                    '<div class="mnd-navigation-group">'+
+                    '<div class="mnd-navigation-icon-bar"><ul><li ng-repeat="element in config.elements" ng-class="getClass($index)"><div class="mnd-number-icon">{{element.icon}}</div></li></ul></div>' +
+                    '<div class="mnd-navigation-text-bar"><ul data-ng-hide="isHidden"><li ng-repeat="element in config.elements" ng-class="getClass($index)">{{element.text}}</li></ul></div>' +
+                    '</div>' +
+                    '</div>',
                 link: function (scope) {
                     config = scope.config;
                     scope.getClass = getClass;
@@ -61,6 +64,13 @@
                     scope.$on("navigation-backward", function () {
                         backward();
                     });
+                    scope.small = function(isSmall) {
+                        var result = '';
+                        if (isSmall) {
+                            result = 'mnd-navigation-control-closed';
+                        }
+                        return result;
+                    }
                 }
             };
         }]);

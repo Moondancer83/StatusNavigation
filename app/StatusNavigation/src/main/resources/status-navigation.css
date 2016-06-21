@@ -9,6 +9,7 @@
 .mnd-status-navigation ul {
     margin: 0;
     padding: 0;
+    transition: 1s ease-in-out;
 }
 
 .mnd-status-navigation li {
@@ -32,13 +33,13 @@
 .mnd-status-navigation .mnd-navigation-icon-bar li, .mnd-status-navigation .mnd-navigation-text-bar li {
     height: 1em;
     line-height: 1em;
-    padding: 0 5px;
+    padding: 5px;
 }
 .mnd-status-navigation .mnd-navigation-icon-bar li {
     width: 1em;
 }
-.mnd-status-navigation .mnd-navigation-text-bar li {
-    padding: 0 10px;
+.mnd-status-navigation .mnd-navigation-text-bar {
+    overflow-x: hidden;
 }
 
 .mnd-status-navigation .mnd-navigation-icon-bar li .mnd-number-icon {
@@ -64,4 +65,25 @@
 .mnd-status-navigation .mnd-element-disabled .mnd-number-icon {
     background-color: darkgray;
     color: white;
+}
+
+.mnd-navigation-text-bar ul.ng-hide, .mnd-navigation-control-closed {
+    transform: translateX(-58px);
+}
+
+.mnd-navigation-control {
+    display: table-caption;
+}
+
+.mnd-navigation-control span {
+    display: block;
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    float: right;
+    margin: 5px;
+}
+
+.mnd-navigation-group {
+    display: table-row-group;
 }

@@ -21,7 +21,12 @@
     "url": "https://github.com/Moondancer83/StatusNavigation/issues"
   },
   "homepage": "https://github.com/Moondancer83/StatusNavigation#readme",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-animate": "^1.5.7"
+  },
   "devDependencies": {
-    "angular": "^1.5.7"
+    "angular": "^1.5.7",
+    "angular-animate": "^1.5.7"
   }
 }
