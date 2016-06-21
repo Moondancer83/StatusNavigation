@@ -1,5 +1,6 @@
 .mnd-status-navigation {
     display: table;
+    margin-left: 200px;
 }
 
 .mnd-status-navigation .mnd-navigation-icon-bar, .mnd-status-navigation .mnd-navigation-text-bar {
@@ -67,12 +68,19 @@
     color: white;
 }
 
-.mnd-navigation-text-bar ul.ng-hide, .mnd-navigation-control-closed {
-    transform: translateX(-58px);
+.mnd-navigation-text-bar ul.ng-hide {
+    transform: translateX(-100%);
 }
 
 .mnd-navigation-control {
     display: table-caption;
+    width: 100%;
+    transition: width 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.mnd-navigation-control.mnd-navigation-control-closed{
+    width: 26px;
 }
 
 .mnd-navigation-control span {
@@ -82,6 +90,7 @@
     background-color: black;
     float: right;
     margin: 5px;
+    border-radius: 4px;
 }
 
 .mnd-navigation-group {
