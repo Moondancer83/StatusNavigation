@@ -16,12 +16,5 @@
             active: 2,
             disabled: [4]
         };
-
-        that.forward = function() {
-            $scope.$broadcast("navigation-forward");
-        };
-        that.backward = function() {
-            $scope.$broadcast("navigation-backward");
-        };
     }])
 })(angular);

@@ -55,12 +55,12 @@
                 link: function (scope) {
                     config = scope.config;
                     scope.getClass = getClass;
-                    scope.$on("navigation-forward", function () {
+                    scope.config.next =  function () {
                         forward();
-                    });
-                    scope.$on("navigation-backward", function () {
+                    };
+                    scope.config.previous = function () {
                         backward();
-                    });
+                    };
                 }
             };
         }]);
